@@ -10,6 +10,7 @@ html {
 
 body {
   font-size: 62.5%;
+  font-family: "Raleway", sans-serif;
 }
 
 .header {
@@ -24,15 +25,16 @@ body {
 }
 .header__heading span {
   color: white;
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   text-transform: uppercase;
-  opacity: 0.75;
+  opacity: 0.9;
+  letter-spacing: 0.1rem;
 }
 .header__heading h1 {
   color: white;
-  text-transform: uppercase;
   font-size: 3.5rem;
-  margin-top: 1rem;
+  margin-top: 0.75rem;
+  font-weight: 600;
 }
 
 .welcome {
@@ -56,14 +58,16 @@ body {
 }
 .welcome__info span {
   color: #0E9AA9;
-  font-size: 1.1rem;
+  font-size: 0.75rem;
   margin: 0.75rem 0 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
 }
 .welcome__info p {
   font-size: 1.1rem;
   color: black;
   opacity: 0.75;
-  line-height: 1.7rem;
+  line-height: 1.85rem;
 }
 .welcome__info-wrapper {
   display: flex;
@@ -84,6 +88,10 @@ body {
   border-radius: 10rem;
 }
 
+.watch {
+  background-color: #F5F5F5;
+}
+
 .navigation {
   display: flex;
   flex-direction: row;
@@ -94,7 +102,7 @@ body {
 .navigation__logo {
   text-decoration: none;
   color: white;
-  font-size: 2rem;
+  font-size: 1.75rem;
 }
 .navigation__wrapper {
   display: flex;
@@ -116,9 +124,10 @@ body {
 }
 .navigation__listItem a {
   text-decoration: none;
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: white;
-  opacity: 0.75;
+  opacity: 0.8;
+  letter-spacing: 0.1rem;
 }
 
 /*# sourceMappingURL=index.css.map */
