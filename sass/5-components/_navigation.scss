@@ -1,0 +1,32 @@
+.navigation {
+    @include displayFlex(row, center, center);
+    height: 6rem;
+
+    &__logo {
+        text-decoration: none;
+        color: white;
+        font-size: 2rem;
+    }
+
+    &__wrapper {
+        @include displayFlex(row, center, space-between);
+        width: 70rem;
+        margin: 0 auto;
+    }
+
+    &__list {
+        @include displayFlex(row, center, center);
+    }
+
+    &__listItem {
+        list-style: none;
+        margin-left: 2rem;
+        
+        a {
+            text-decoration: none;
+            font-size: 1.1rem;
+            color: white;
+            opacity: .75;
+        }
+    }
+}
