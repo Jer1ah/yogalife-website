@@ -90,6 +90,68 @@ body {
 
 .watch {
   background-color: #F5F5F5;
+  height: 40rem;
+}
+.watch__wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 75rem;
+  margin: 0 auto;
+  height: 100%;
+}
+.watch__media {
+  position: relative;
+  height: 100%;
+  width: 35rem;
+}
+.watch__media .video {
+  position: absolute;
+  left: 0;
+  top: 8rem;
+  z-index: 3;
+  height: 23rem;
+  border-radius: 0.25rem;
+}
+.watch__media .image {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  top: 21rem;
+  right: -1rem;
+  z-index: 11;
+  height: 13rem;
+  border: 0.55rem solid #F5F5F5;
+}
+.watch__info {
+  width: 35rem;
+}
+.watch__info h3 {
+  font-size: 2.2rem;
+  font-weight: 500;
+}
+.watch__info .line {
+  height: 0.01rem;
+  background-color: black;
+  width: 6rem;
+  margin: 0.5rem 0 2rem;
+}
+.watch__info p {
+  color: black;
+  opacity: 0.65;
+  font-size: 1rem;
+  line-height: 1.8rem;
+  width: 75%;
+}
+.watch__info .button {
+  color: #0E9AA9;
+  text-decoration: none;
+  font-size: 1.1rem;
+  display: inline-block;
+  margin-top: 1.33rem;
+  letter-spacing: 0.1rem;
+  font-weight: 600;
 }
 
 .navigation {

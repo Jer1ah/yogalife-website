@@ -1,3 +1,71 @@
 .watch {
     background-color: $main-gray;
+    height: 40rem;
+
+    &__wrapper {
+        @include displayFlex(row, center, space-between);
+        width: 75rem;
+        margin: 0 auto;
+        height: 100%;
+    }
+
+    &__media {
+        position: relative;
+        height: 100%;
+        width: 35rem;
+
+        .video {
+            position: absolute;
+            left: 0;
+            top: 8rem;
+            z-index: 3;
+            height: 23rem;
+            border-radius: .25rem;
+        }
+
+        .image {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            top: 21rem;
+            right: -1rem;
+            z-index: 11;
+            height: 13rem;
+            border: .55rem solid $main-gray;
+        }
+    }
+
+    &__info {
+        width: 35rem;
+
+        h3 {
+            font-size: 2.2rem;
+            font-weight: 500;
+        }
+
+        .line {
+            height: .01rem;
+            background-color: black;
+            width: 6rem;
+            margin: .5rem 0 2rem;
+        }
+
+        p {
+            color: black;
+            opacity: .65;
+            font-size: 1rem;
+            line-height: 1.8rem;
+            width: 75%;
+        }
+
+        .button {
+            color: $main-blue;
+            text-decoration: none;
+            font-size: 1.1rem;
+            display: inline-block;
+            margin-top: 1.33rem;
+            letter-spacing: .1rem;
+            font-weight: 600;
+        }
+    }
 }
