@@ -125,7 +125,7 @@ body {
   border: 0.55rem solid #F5F5F5;
 }
 .watch__info {
-  width: 35rem;
+  width: 31rem;
 }
 .watch__info h3 {
   font-size: 2.2rem;
@@ -142,7 +142,6 @@ body {
   opacity: 0.65;
   font-size: 1rem;
   line-height: 1.8rem;
-  width: 75%;
 }
 .watch__info .button {
   color: #0E9AA9;
@@ -152,6 +151,85 @@ body {
   margin-top: 1.33rem;
   letter-spacing: 0.1rem;
   font-weight: 600;
+}
+
+.pricing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0.1rem;
+}
+.pricing h2 {
+  font-size: 2.2rem;
+  font-weight: 500;
+  margin: 3rem 0 0;
+}
+.pricing .line {
+  height: 0.01rem;
+  width: 6rem;
+  background-color: black;
+  margin: 0.85rem 0 0;
+}
+.pricing__list {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  width: 70rem;
+  margin: 5rem 0 5rem;
+}
+.pricing__listItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 23%;
+  height: 28rem;
+  border: 0.01rem solid gray;
+}
+.pricing__listItem h4 {
+  width: 65%;
+  font-size: 1.33rem;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 2rem;
+}
+.pricing__listItem h3 {
+  font-size: 2.2rem;
+  font-weight: 500;
+  margin: 1.75rem 0;
+}
+.pricing__listItem span {
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+  width: 65%;
+  text-align: center;
+  opacity: 0.85;
+}
+.pricing__listItem a {
+  display: inline-block;
+  margin-top: 2rem;
+  text-decoration: none;
+  color: white;
+  background-color: #0E9AA9;
+  border-radius: 5rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 0.75rem 1.33rem;
+}
+.pricing .first {
+  background-color: #0E9AA9;
+  color: white;
+  border-color: #0E9AA9;
+}
+.pricing .first a {
+  border: 0.1rem solid white;
+  color: white;
 }
 
 .navigation {
