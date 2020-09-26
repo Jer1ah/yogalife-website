@@ -1,0 +1,46 @@
+.features {
+    @include displayFlex(column, center, flex-start);
+
+    h2 {
+        font-size: 2.2rem;
+        font-weight: 500;
+        margin: 3rem 0 0;
+    }
+
+    .line {
+        height: .01rem;
+        width: 6rem;
+        background-color: black;
+        margin: .85rem 0 0;
+    }
+
+    &__list {
+        @include displayFlex(row, center, space-between);
+        padding: 0;
+        list-style: none;
+        margin: 4rem 0 5rem;
+        width: 70rem;
+    }
+
+    &__listItem {
+        @include displayFlex(column, center, flex-start);
+        text-align: center;
+        width: 22%;
+
+        img {
+            width: 4.4rem;
+        }
+
+        h4 {
+            font-size: 1.25rem;
+            font-weight: 500;
+            margin: .75rem 0 .5rem;
+        }
+
+        p {
+            font-size: .9rem;
+            opacity: .85;
+            line-height: 1.5rem;
+        }
+    }
+}
