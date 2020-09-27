@@ -1,0 +1,57 @@
+.events {
+    @include displayFlex(column, center, flex-start);
+
+    h2 {
+        font-size: 2.2rem;
+        font-weight: 500;
+        margin: 3rem 0 0;
+    }
+
+    .line {
+        height: .01rem;
+        width: 6rem;
+        background-color: black;
+        margin: .85rem 0 0;
+    }
+
+    &__list {
+        @include displayFlex(row, flex-start, space-between);
+        list-style: none;
+        padding: 0;
+        width: 65rem;
+        margin: 5rem 0;
+    }
+
+    &__listItem {
+        @include displayFlex(column, flex-start, flex-start);
+        width: 28.5%;
+
+        img {
+            width: 100%;
+        }
+
+        h4 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin: 1rem 0 .22rem;
+        }
+
+        span {
+            margin-bottom: .75rem;
+            font-size: .9rem;
+        }
+
+        h5 {
+            display: inline;
+            color: $main-blue;
+            font-weight: 500;
+            font-size: .95rem;
+        }
+
+        p {
+            font-size: 1rem;
+            opacity: .85;
+            line-height: 1.75rem;
+        }
+    }
+}
