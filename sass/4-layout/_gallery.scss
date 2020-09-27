@@ -1,0 +1,40 @@
+.gallery {
+    @include displayFlex(column, center, flex-start);
+
+    h2 {
+        font-size: 2.2rem;
+        font-weight: 500;
+        margin: 3rem 0 0;
+    }
+
+    .line {
+        height: .01rem;
+        width: 6rem;
+        background-color: black;
+        margin: .85rem 0 0;
+    }
+
+    &__list {
+        @include displayFlex(row, flex-start, flex-start);
+        flex-wrap: wrap;
+        list-style: none;
+        padding: 0;
+        margin: 5rem 0;
+    }
+
+    &__listItem {
+        width: 33.33%;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            transform: scale(1.1);
+            transition: all .3s;
+        }
+
+        img:hover {
+            transform: scale(1.2);
+            cursor: pointer;
+        }
+    }
+}
