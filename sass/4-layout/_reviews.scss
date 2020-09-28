@@ -1,0 +1,51 @@
+.reviews {
+    @include displayFlex(column, center, flex-start);
+    background-color: $main-gray;
+
+    h2 {
+        font-size: 2.2rem;
+        font-weight: 500;
+        margin: 7rem 0 0;
+    }
+
+    .line {
+        height: .01rem;
+        width: 6rem;
+        background-color: black;
+        margin: .85rem 0 0;
+    }
+
+    &__list {
+        @include displayFlex(row, flex-start, space-between);
+        padding: 0;
+        list-style: none;
+        margin: 5rem 0;
+        width: 65rem;
+    }
+
+    &__listItem {
+        @include displayFlex(row, flex-start, flex-start);
+        width: 47%;
+
+        img {
+            width: 5rem;
+        }
+
+        span {
+            margin-left: 1rem;
+        }
+
+        h4 {
+            font-size: 1.2rem;
+            font-weight: 500;
+            margin-bottom: .5rem;
+        }
+
+        p {
+            font-size: .9rem;
+            color: #111;
+            opacity: .5rem;
+            line-height: 1.55rem;
+        }
+    }
+}

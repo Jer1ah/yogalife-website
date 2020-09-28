@@ -380,6 +380,59 @@ body {
   line-height: 1.75rem;
 }
 
+.reviews {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #F5F5F5;
+}
+.reviews h2 {
+  font-size: 2.2rem;
+  font-weight: 500;
+  margin: 7rem 0 0;
+}
+.reviews .line {
+  height: 0.01rem;
+  width: 6rem;
+  background-color: black;
+  margin: 0.85rem 0 0;
+}
+.reviews__list {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 0;
+  list-style: none;
+  margin: 5rem 0;
+  width: 65rem;
+}
+.reviews__listItem {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 47%;
+}
+.reviews__listItem img {
+  width: 5rem;
+}
+.reviews__listItem span {
+  margin-left: 1rem;
+}
+.reviews__listItem h4 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+.reviews__listItem p {
+  font-size: 0.9rem;
+  color: #111;
+  opacity: 0.5rem;
+  line-height: 1.55rem;
+}
+
 .navigation {
   display: flex;
   flex-direction: row;
