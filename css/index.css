@@ -405,7 +405,7 @@ body {
   justify-content: space-between;
   padding: 0;
   list-style: none;
-  margin: 5rem 0;
+  margin: 5rem 0 7rem;
   width: 65rem;
 }
 .reviews__listItem {
@@ -431,6 +431,50 @@ body {
   color: #111;
   opacity: 0.5rem;
   line-height: 1.55rem;
+}
+
+.footer {
+  background-color: #333;
+  padding: 0.1rem;
+}
+.footer__wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 45rem;
+  margin: 3rem auto 5rem;
+}
+.footer .quickMenu__list, .footer .ministries__list, .footer .social-media__list {
+  list-style: none;
+  padding: 0;
+}
+.footer .social-media__list {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.footer .social-media__listItem {
+  margin-right: 0.75rem;
+}
+.footer .social-media__list img {
+  width: 1rem;
+}
+.footer .quickMenu__listItem, .footer .ministries__listItem, .footer .social-media__listItem {
+  margin-bottom: 1rem;
+}
+.footer .quickMenu__listItem a, .footer .ministries__listItem a, .footer .social-media__listItem a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: #999;
+  font-weight: 600;
+}
+.footer h4 {
+  font-size: 1.3rem;
+  margin-bottom: 1.2rem;
+  font-weight: 500;
+  color: white;
 }
 
 .navigation {

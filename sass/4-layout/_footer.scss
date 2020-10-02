@@ -1,0 +1,45 @@
+.footer {
+    background-color: #333;
+    padding: .1rem;
+
+    &__wrapper {
+        @include displayFlex(row, flex-start, space-between);
+        width: 45rem;
+        margin: 3rem auto 5rem;
+    }
+
+    .quickMenu__list, .ministries__list, .social-media__list {
+        list-style: none;
+        padding: 0;
+    }
+
+    .social-media__list {
+        @include displayFlex(row, flex-start, flex-start);
+
+        &Item {
+            margin-right: .75rem;
+        }
+
+        img {
+            width: 1rem;
+        }
+    }
+
+    .quickMenu__listItem, .ministries__listItem, .social-media__listItem {
+        margin-bottom: 1rem;
+
+        a {
+            text-decoration: none;
+            font-size: .9rem;
+            color: #999;
+            font-weight: 600;
+        }
+    }
+
+    h4 {
+        font-size: 1.3rem;
+        margin-bottom: 1.2rem;
+        font-weight: 500;
+        color: white;
+    }
+}
