@@ -23,3 +23,14 @@ const onScrollController = (function() {
         }
     };
 }());
+
+const dropdownMenuController = (function() {
+    const _dropdownMenu = document.querySelector(".dropdown-menu");
+    const _menuButton = document.querySelector(".mobile-nav img");
+    const _backdrop = document.querySelector(".backdrop");
+
+    _menuButton.addEventListener("click", () => {
+        _dropdownMenu.style.transform = "scale(450)";
+        _backdrop.style.display = "inline-block";
+    });
+}());
