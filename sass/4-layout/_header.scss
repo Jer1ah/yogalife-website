@@ -6,7 +6,8 @@
     padding: .1rem;
 
     &__heading {
-        margin: 17.5rem auto 0;
+        @include displayFlex(column, center, center);
+        margin: 20rem auto 0;
         text-align: center;
 
         span {
@@ -22,6 +23,20 @@
             font-size: 3.5rem;
             margin-top: .75rem;
             font-weight: 600;
+        }
+    }
+}
+
+// media queries
+@media(max-width: 750px) {
+    .header__heading {
+        span {
+            font-size: .75rem;
+        }
+
+        h1 {
+            width: 20rem;
+            margin-top: 0;
         }
     }
 }

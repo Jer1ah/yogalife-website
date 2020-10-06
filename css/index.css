@@ -21,7 +21,11 @@ body {
   padding: 0.1rem;
 }
 .header__heading {
-  margin: 17.5rem auto 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20rem auto 0;
   text-align: center;
 }
 .header__heading span {
@@ -38,6 +42,15 @@ body {
   font-weight: 600;
 }
 
+@media (max-width: 750px) {
+  .header__heading span {
+    font-size: 0.75rem;
+  }
+  .header__heading h1 {
+    width: 20rem;
+    margin-top: 0;
+  }
+}
 .welcome {
   display: flex;
   flex-direction: row;
@@ -502,6 +515,7 @@ body {
   align-items: center;
   justify-content: space-between;
   width: 70rem;
+  max-width: 90%;
   margin: 0 auto;
 }
 .navigation__list {
