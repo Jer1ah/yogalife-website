@@ -2,12 +2,14 @@ const onScrollController = (function() {
     const _nav = document.querySelector(".navigation");
     const _logo = document.querySelector(".navigation__logo");
     const _items = document.querySelectorAll(".navigation__listItem a");
+    const _menuButton = document.querySelector(".menu-button");
 
     window.onscroll = () => {
         if(window.scrollY > 50) {
             _nav.style.backgroundColor = "white";
             _nav.style.boxShadow = "0px 1px 5px 0px rgba(199,195,199,1)";
             _logo.style.color = "black";
+            _menuButton.src = "images/menu-black.svg";
 
             for(let i = 0; i < _items.length; i++) {
                 _items[i].style.color = "black";
@@ -16,6 +18,7 @@ const onScrollController = (function() {
             _nav.style.backgroundColor = "transparent";
             _logo.style.color = "white";
             _nav.style.boxShadow = "none";
+            _menuButton.src = "images/menu-white.svg";
 
             for(let i = 0; i < _items.length; i++) {
                 _items[i].style.color = "white";
@@ -36,6 +39,10 @@ const dropdownMenuController = (function() {
         _backdrop.style.display = "inline-block";
         _closeIcon.style.display = "inline-block";
         _navigation.style.display = "inline-block";
+
+        for(let i = 0; i < _navigation.children.length; i++) {
+            _navigation.children[i].firstElementChild.style.color = "black";
+        }
     });
 
     _closeIcon.addEventListener("click", () => {
@@ -43,6 +50,10 @@ const dropdownMenuController = (function() {
         _closeIcon.style.display = "none";
         _backdrop.style.display = "none";
         _navigation.style.display = "none";
+
+        for(let i = 0; i < _navigation.children.length; i++) {
+            _navigation.children[i].firstElementChild.style.color = "white";
+        }
     });
 }());
 

@@ -43,6 +43,9 @@ body {
 }
 
 @media (max-width: 750px) {
+  .header__heading {
+    margin-top: 17.5rem;
+  }
   .header__heading span {
     font-size: 0.75rem;
   }
