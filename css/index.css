@@ -532,6 +532,14 @@ body {
   width: 0.1rem;
   z-index: 1001;
 }
+.navigation .close-icon {
+  width: 1.2rem;
+  position: fixed;
+  top: 2.2rem;
+  right: 1.5rem;
+  display: none;
+  z-index: 1005;
+}
 .navigation .backdrop {
   background-color: rgba(0, 0, 0, 0.75);
   position: fixed;
@@ -578,7 +586,22 @@ body {
     width: 100%;
   }
   .navigation__list {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 5rem;
+    right: 8rem;
+    align-items: flex-start;
+    z-index: 1005;
     display: none;
+  }
+  .navigation__listItem {
+    margin-bottom: 2rem;
+  }
+  .navigation__listItem a {
+    font-size: 1.1rem;
+    color: black;
+    font-weight: 600;
   }
 }
 

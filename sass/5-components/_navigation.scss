@@ -38,6 +38,15 @@
         z-index: 1001;
     }
 
+    .close-icon {
+        width: 1.2rem;
+        position: fixed;
+        top: 2.2rem;
+        right: 1.5rem;
+        display: none;
+        z-index: 1005;
+    }
+
     .backdrop {
         background-color: rgba(0,0,0, .75);
         position: fixed;
@@ -87,7 +96,24 @@
         }
 
         &__list {
+            display: flex;
+            flex-direction: column;
+            position: fixed;
+            top: 5rem;
+            right: 8rem;
+            align-items: flex-start;
+            z-index: 1005;
             display: none;
+
+            &Item {
+                margin-bottom: 2rem;
+
+                a {
+                    font-size: 1.1rem;
+                    color: black;
+                    font-weight: 600;
+                }
+            }
         }
     }
 }
