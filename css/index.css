@@ -59,12 +59,14 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  height: 30rem;
 }
 .welcome__image {
   flex: 1;
-}
-.welcome__image img {
-  width: 100%;
+  background: url("../../images/image1.png");
+  background-size: cover;
+  background-position: center;
+  height: 100%;
 }
 .welcome__info {
   flex: 1;
@@ -101,10 +103,39 @@ body {
   color: white;
   background-color: #0E9AA9;
   font-size: 1rem;
-  padding: 1.1rem 1.3rem;
+  padding: 0.75rem 1.1rem;
   border-radius: 10rem;
 }
 
+@media (max-width: 1105px) {
+  .welcome {
+    height: 25rem;
+  }
+  .welcome__info {
+    flex: 1.5;
+  }
+  .welcome__info-wrapper {
+    width: 90%;
+  }
+  .welcome__button {
+    margin-top: 2rem;
+  }
+}
+@media (max-width: 835px) {
+  .welcome {
+    flex-direction: column;
+    height: auto;
+  }
+  .welcome__image {
+    display: none;
+  }
+  .welcome h3 {
+    margin-top: 3rem;
+  }
+  .welcome__button {
+    margin-bottom: 3rem;
+  }
+}
 .watch {
   background-color: #F5F5F5;
   height: 40rem;
