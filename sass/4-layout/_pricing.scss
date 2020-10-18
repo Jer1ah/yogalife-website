@@ -20,6 +20,7 @@
         list-style: none;
         padding: 0;
         width: 70rem;
+        max-width: 95%;
         margin: 5rem 0 5rem;
     }
 
@@ -74,6 +75,29 @@
         a {
             border: .1rem solid white;
             color: white;
+        }
+    }
+}
+
+//media queries
+@media(max-width: 975px) {
+    .pricing__list {
+        flex-wrap: wrap;
+        width: 40rem;
+
+        &Item {
+            width: 48%;
+            margin-bottom: 2rem;
+        }
+    }
+}
+
+@media(max-width: 650px) {
+    .pricing__list {
+        width: 25rem;
+
+        &Item {
+            width: 100%;
         }
     }
 }

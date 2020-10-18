@@ -275,6 +275,7 @@ body {
   list-style: none;
   padding: 0;
   width: 70rem;
+  max-width: 95%;
   margin: 5rem 0 5rem;
 }
 .pricing__listItem {
@@ -328,6 +329,24 @@ body {
   color: white;
 }
 
+@media (max-width: 975px) {
+  .pricing__list {
+    flex-wrap: wrap;
+    width: 40rem;
+  }
+  .pricing__listItem {
+    width: 48%;
+    margin-bottom: 2rem;
+  }
+}
+@media (max-width: 650px) {
+  .pricing__list {
+    width: 25rem;
+  }
+  .pricing__listItem {
+    width: 100%;
+  }
+}
 .features {
   display: flex;
   flex-direction: column;
