@@ -38,3 +38,20 @@
         }
     }
 }
+
+//media queries
+@media(max-width: 1000px) {
+    .gallery__list {
+        &Item {
+            width: 50%;
+        }
+    }
+}
+
+@media(max-width: 700px) {
+    .gallery__list {
+        &Item {
+            width: 100%;
+        }
+    }
+}

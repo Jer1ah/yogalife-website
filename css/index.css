@@ -456,6 +456,16 @@ body {
   cursor: pointer;
 }
 
+@media (max-width: 1000px) {
+  .gallery__listItem {
+    width: 50%;
+  }
+}
+@media (max-width: 700px) {
+  .gallery__listItem {
+    width: 100%;
+  }
+}
 .events {
   display: flex;
   flex-direction: column;
