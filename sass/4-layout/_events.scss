@@ -19,6 +19,7 @@
         list-style: none;
         padding: 0;
         width: 65rem;
+        max-width: 95%;
         margin: 5rem 0;
     }
 
@@ -52,6 +53,19 @@
             font-size: 1rem;
             opacity: .85;
             line-height: 1.75rem;
+        }
+    }
+}
+
+//media queries
+@media(max-width: 850px) {
+    .events__list {
+        flex-direction: column;
+        width: 35rem;
+
+        &Item {
+            width: 100%;
+            margin-bottom: 3rem;
         }
     }
 }

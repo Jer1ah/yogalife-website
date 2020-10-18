@@ -491,7 +491,6 @@ body {
   list-style: none;
   padding: 0;
   width: 65rem;
-  max-width: 95%;
   margin: 5rem 0;
 }
 .events__listItem {
@@ -525,16 +524,6 @@ body {
   line-height: 1.75rem;
 }
 
-@media (max-width: 850px) {
-  .events__list {
-    flex-direction: column;
-    width: 35rem;
-  }
-  .events__listItem {
-    width: 100%;
-    margin-bottom: 3rem;
-  }
-}
 .reviews {
   display: flex;
   flex-direction: column;
@@ -562,7 +551,6 @@ body {
   list-style: none;
   margin: 5rem 0 7rem;
   width: 65rem;
-  max-width: 95%;
 }
 .reviews__listItem {
   display: flex;
@@ -589,17 +577,6 @@ body {
   line-height: 1.55rem;
 }
 
-@media (max-width: 850px) {
-  .reviews__list {
-    flex-direction: column;
-  }
-  .reviews__listItem {
-    width: 100%;
-  }
-  .reviews__listItem:first-child {
-    margin-bottom: 2rem;
-  }
-}
 .footer {
   background-color: #333;
   padding: 0.1rem;
@@ -758,4 +735,4 @@ body {
   }
 }
 
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=index.csss.map */

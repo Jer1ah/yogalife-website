@@ -21,6 +21,7 @@
         list-style: none;
         margin: 5rem 0 7rem;
         width: 65rem;
+        max-width: 95%;
     }
 
     &__listItem {
@@ -46,6 +47,21 @@
             color: #111;
             opacity: .5rem;
             line-height: 1.55rem;
+        }
+    }
+}
+
+//media queries
+@media(max-width: 850px) {
+    .reviews__list {
+        flex-direction: column;
+
+        &Item {
+            width: 100%;
+            
+            &:first-child {
+                margin-bottom: 2rem;
+            }
         }
     }
 }
