@@ -610,6 +610,7 @@ body {
   align-items: flex-start;
   justify-content: space-between;
   width: 45rem;
+  max-width: 95%;
   margin: 3rem auto 5rem;
 }
 .footer .quickMenu__list, .footer .ministries__list, .footer .social-media__list {
@@ -644,6 +645,16 @@ body {
   color: white;
 }
 
+@media (max-width: 550px) {
+  .footer__wrapper {
+    flex-direction: column;
+    margin-bottom: 3rem;
+  }
+
+  .quickMenu__list, .ministries__list {
+    margin-bottom: 3rem;
+  }
+}
 .navigation {
   display: flex;
   flex-direction: row;

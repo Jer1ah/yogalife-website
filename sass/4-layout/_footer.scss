@@ -5,6 +5,7 @@
     &__wrapper {
         @include displayFlex(row, flex-start, space-between);
         width: 45rem;
+        max-width: 95%;
         margin: 3rem auto 5rem;
     }
 
@@ -41,5 +42,17 @@
         margin-bottom: 1.2rem;
         font-weight: 500;
         color: white;
+    }
+}
+
+//media queries 
+@media(max-width: 550px) {
+    .footer__wrapper {
+        flex-direction: column;
+        margin-bottom: 3rem;
+    }
+
+    .quickMenu__list, .ministries__list {
+        margin-bottom: 3rem;
     }
 }
