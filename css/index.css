@@ -373,6 +373,7 @@ body {
   list-style: none;
   margin: 4rem 0 5rem;
   width: 70rem;
+  max-width: 95%;
 }
 .features__listItem {
   display: flex;
@@ -396,6 +397,24 @@ body {
   line-height: 1.5rem;
 }
 
+@media (max-width: 900px) {
+  .features__list {
+    flex-wrap: wrap;
+    width: 40rem;
+  }
+  .features__listItem {
+    width: 48%;
+    margin-bottom: 3rem;
+  }
+}
+@media (max-width: 625px) {
+  .features__list {
+    width: 25rem;
+  }
+  .features__listItem {
+    width: 100%;
+  }
+}
 .gallery {
   display: flex;
   flex-direction: column;

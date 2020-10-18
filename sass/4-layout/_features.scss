@@ -20,6 +20,7 @@
         list-style: none;
         margin: 4rem 0 5rem;
         width: 70rem;
+        max-width: 95%;
     }
 
     &__listItem {
@@ -41,6 +42,29 @@
             font-size: .9rem;
             opacity: .85;
             line-height: 1.5rem;
+        }
+    }
+}
+
+//media queries
+@media(max-width: 900px) {
+    .features__list {
+        flex-wrap: wrap;
+        width: 40rem;
+
+        &Item {
+            width: 48%;
+            margin-bottom: 3rem;
+        }
+    }
+}
+
+@media(max-width: 625px) {
+    .features__list {
+        width: 25rem;
+
+        &Item {
+            width: 100%;
         }
     }
 }
